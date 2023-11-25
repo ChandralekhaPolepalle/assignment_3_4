@@ -1,7 +1,7 @@
 const canadianInput = document.getElementById("canadian");
 const usInput = document.getElementById("us");
 
-
+// conversion rate
 const rate = 1.37;
 
 function convertCurrency() {
