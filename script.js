@@ -16,12 +16,12 @@ function convertCurrency() {
 
     if (!isNaN(cad)) {
         // Convert to USD
-        const convertedUSD = cad * rate;
+        const convertedUSD = cad / rate;
         // Display result in the USD input box
         usInput.value = convertedUSD.toFixed(3);
     } else if (!isNaN(usd)) {
         // Convert to CAD
-        const convertedCAD = usd / rate;
+        const convertedCAD = usd * rate;
         // Display result in the CAD input box
         canadianInput.value = convertedCAD.toFixed(3);
     }
