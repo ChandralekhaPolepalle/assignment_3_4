@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD to USD</title>
+    <style>
+        /* Style for body */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+        }
+        /* Style for heading */
+        #heading{
+            background-color: midnightblue;
+            color: white;
+            padding: 2%;
+            margin-bottom: 5%;
+        }
+        /* Style for container */
+        .container {
+            max-width: 50%;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            text-align: center;
+        }
+        /* Style for inputs container */
+        .currency-inputs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        /* Style for each input  */
+        .currency-input {
+            flex: 1;
+            display: flex;
+            align-items: baseline;
+            margin-right: 10px;
+        }
+        /* Style for input label  */
+        label {
+            margin-right: 10px;
+        }
+        /* Style for each input text box  */
+        input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        /* Style for button  */
+        button {
+            width: 30%;
+            padding: 10px;
+            background: midnightblue;
+            color: white;
+            border-radius: 50px;
+        }
+        /* Style for button hover  */
+        button:hover {
+            background: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div id="heading">
+        <h1>US Dollar to Canadian Dollar</h1>
+        <h3>Convert USD to CAD at the real exchange rate</h3>
+    </div>
+
+
+    <div class="currency-inputs">
+        <div class="currency-input">
+            <label for="canadian">Canadian Dollars:</label>
+            <input type="text" id="canadian" name="canadian">
+        </div>
+
+        <div class="currency-input">
+            <label for="us">US Dollars:</label>
+            <input type="text" id="us" name="us">
+        </div>
+    </div>
+
+    <!-- convertCurrency in script file implements conversion logic -->
+    <button onclick="convertCurrency()">Convert</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
